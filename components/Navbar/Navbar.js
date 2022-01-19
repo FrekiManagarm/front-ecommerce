@@ -16,6 +16,7 @@ export const Navbar = ({
     avatar,
     user,
     navMenu,
+    visible,
     authMenu,
     profileMenu,
     isLogin,
@@ -46,7 +47,7 @@ export const Navbar = ({
                 ? null :
                     navMenu && <MenuWrapper className='main_menu'>{navMenu}</MenuWrapper>
                 }
-                {isLogin && avatar ? (
+                { visible ? (
                     <AvatarWrapper>{profileMenu}</AvatarWrapper>
                 ) : (
                     authMenu && (

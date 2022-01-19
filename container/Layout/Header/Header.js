@@ -26,7 +26,7 @@ const Header = ({ user, isLoggedIn }) => {
     const sideBarHandler = () => {
         setVisible(!visible);
     }
-
+    
     const { Option } = Select;
 
     const headerType = router.pathname === "/" ? "default" : "default";
@@ -50,9 +50,10 @@ const Header = ({ user, isLoggedIn }) => {
                             </a>
                         </Link>
                     }
-                    navMenu={<MainMenu isLoggedIn={isLoggedIn} />}
-                    authMenu={<AuthMenu />}
+                    navMenu={<MainMenu visible={visible} setVisible={setVisible} />}
+                    authMenu={<AuthMenu />} 
                     isLogin={isLoggedIn}
+                    visible={visible}
                     avatar={
                         <Image />
                     }
