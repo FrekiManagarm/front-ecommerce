@@ -19,7 +19,7 @@ export const TopSpan = styled.span`
     position: absolute;
     top: 0%;
     transform: translateY(-50%);
-    border-radius: 4px
+    border-radius: 4px;
 `;
 
 export const MidSpan = styled.span`
