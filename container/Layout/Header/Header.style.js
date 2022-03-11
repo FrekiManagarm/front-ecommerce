@@ -9,7 +9,6 @@ import { DARK_GREY, GREY, RED, DARK_BLUE, LIGHTGREY, LIGHT_BLUE, BLUE} from '../
 const HeaderWrapper = styled.header`
   width: 100%;
   
-
   // img>svg.homepage--logo {
   //   fill: red;
   //   color: red;

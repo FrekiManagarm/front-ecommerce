@@ -5,9 +5,10 @@ import Sticky from 'react-stickynode';
 import { useRouter, withRouter } from 'next/router';
 import { Select, Button, Drawer } from 'antd';
 import Navbar from '../../../components/Navbar/Navbar';
-import HeaderWrapper, { LogoArea, MobileNavbar } from './Header.style';
+import HeaderWrapper, { LogoArea, MobileNavbar, Wrapper } from './Header.style';
 import dynamic from 'next/dynamic';
 import useTranslation from '../../../hooks/useTranslation';
+import LogoPic from '../../../public/images/Logo.jpg';
 
 const AuthMenu = dynamic(() => import('./AuthMenu'));
 const MainMenu = dynamic(() => import('./MainMenu'));
@@ -22,9 +23,9 @@ const Header = ({ user, isLoggedIn }) => {
     const [language, setLanguage] = useState(null);
     var username;
 
-    const sideBarHandler = () => {
-        setVisible(!visible);
-    }
+    // const sideBarHandler = () => {
+    //    setVisible(!visible);
+    //}
 
     const { Option } = Select;
 
@@ -38,6 +39,7 @@ const Header = ({ user, isLoggedIn }) => {
     }
 
     return (
+    <>
         <HeaderWrapper>
             <Sticky top={0} innerZ={1001} enableTransforms={false} activeClass='isHeaderSticky'>
                 <Navbar 
@@ -45,11 +47,11 @@ const Header = ({ user, isLoggedIn }) => {
                     logo={
                         <Link href="/" prefetch={false} locale={locale}>
                             <a>
-                                {/* Tu mettra le logo ici avec la balise image de next */}
+                                <Image src={LogoPic} width={50} height={50}/>
                             </a>
                         </Link>
                     }
-                    navMenu={<MainMenu isLoggedIn={isLoggedIn} />}
+                    navMenu={<MainMenu />}
                     authMenu={<AuthMenu />}
                     isLogin={isLoggedIn}
                     avatar={
@@ -64,7 +66,7 @@ const Header = ({ user, isLoggedIn }) => {
                     location={router}
                     // searchVisibility={}
                 />
-
+                
                 {/* La on passe sur le mode mobile de la Navbar */}
                 <MobileNavbar>
                     <LogoArea>
@@ -75,7 +77,8 @@ const Header = ({ user, isLoggedIn }) => {
                 </MobileNavbar>
             </Sticky>
         </HeaderWrapper>
+    </>
     )
 }
 
-export default withRouter(Header)
+export default withRouter(Header);
