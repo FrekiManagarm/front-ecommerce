@@ -1,12 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 import { themeGet } from '@styled-system/theme-get';
+import 'antd/dist/antd.css';
 
 //-------------------------------------------------------------
 //----------------Point d'entrée GlobalStyles------------------
 //-------------------------------------------------------------
 
 const GlobalStyle = createGlobalStyle`
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+@import 'antd/dist/antd.css';
 
 
     * {
@@ -63,6 +65,28 @@ const GlobalStyle = createGlobalStyle`
         //overflow-y: scroll !important;
     }
     //tes global styles et tes classes customs que tu veux modifier à l'état global de ton application
+    
+.ant-drawer-wrapper-body,
+.ant-drawer-header,
+.ant-drawer-header-close-only {
+  background-color: black;
+}
+
+.ant-drawer-close {
+  color: white;
+  padding: 30px 50px;
+  font-size: 30px;
+}
+
+.ant-drawer-close:hover {
+  color: red;
+}
+
+.ant-drawer-header-title {
+  display: flex;
+  justify-content: flex-end;
+}
+
 `;
 
 export default GlobalStyle;

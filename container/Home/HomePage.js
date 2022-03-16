@@ -2,11 +2,11 @@ import React from 'react';
 
 const HomePage = () => {
     return (
-        <div>
-        
-        </div>
+        <>
+            <h1>Ceci est la page home</h1>
+        </>
     )
 }
 
-export default HomePage
+export default HomePage;
 

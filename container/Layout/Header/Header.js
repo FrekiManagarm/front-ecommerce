@@ -5,7 +5,7 @@ import Sticky from 'react-stickynode';
 import { useRouter, withRouter } from 'next/router';
 import { Select, Button, Drawer } from 'antd';
 import Navbar from '../../../components/Navbar/Navbar';
-import HeaderWrapper, { LogoArea, MobileNavbar } from './Header.style';
+import HeaderWrapper, { LogoArea, MobileNavbar, Wrapper } from './Header.style';
 import dynamic from 'next/dynamic';
 import useTranslation from '../../../hooks/useTranslation';
 import LogoPic from '../../../public/images/Logo.jpg';
@@ -39,6 +39,7 @@ const Header = ({ user, isLoggedIn }) => {
     }
 
     return (
+    <>
         <HeaderWrapper>
             <Sticky top={0} innerZ={1001} enableTransforms={false} activeClass='isHeaderSticky'>
                 <Navbwar 
@@ -66,7 +67,7 @@ const Header = ({ user, isLoggedIn }) => {
                     location={router}
                     // searchVisibility={}
                 />
-
+                
                 {/* La on passe sur le mode mobile de la Navbar */}
                 <MobileNavbar>
                     <LogoArea>
@@ -77,8 +78,8 @@ const Header = ({ user, isLoggedIn }) => {
                 </MobileNavbar>
             </Sticky>
         </HeaderWrapper>
-        
+        </>
     )
 }
 
-export default withRouter(Header)
+export default withRouter(Header);

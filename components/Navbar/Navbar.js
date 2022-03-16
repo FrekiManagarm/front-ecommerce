@@ -15,6 +15,8 @@ export const Navbar = ({
     logo,
     avatar,
     user,
+    //visible,
+    //setVisible,
     navMenu,
     visible,
     authMenu,
