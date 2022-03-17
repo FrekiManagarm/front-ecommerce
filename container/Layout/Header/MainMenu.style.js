@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 // Global Infos components
-const WrapperButton = styled.div``;
+export const WrapperButton = styled.div``;
 export const Title = styled.h1`
     color: white;
     font-size: 50px ;
@@ -99,5 +99,3 @@ export const DownBar = styled.span`
     position: absolute;
     border-radius: 4px;
 `;
-
-export default WrapperButton;

@@ -1,4 +1,6 @@
-import { Layout } from "antd"
+import { Layout, Drawer } from "antd"
+import { useState } from "react";
+import DrawerMenu from "./Header/DrawerMenu";
 import dynamic from 'next/dynamic';
 import { useRouter, withRouter } from "next/router";
 import LayoutProvider from "../../context/LayoutProvider";
@@ -10,6 +12,7 @@ const { Content } = Layout;
 
 const LayoutWrapper = ({ children, user, isLoggedIn }) => {
     if (typeof user === 'string') user = JSON.parse(user);
+    const [drawer, setDrawer] = useState(false);
 
     const router = useRouter();
 
@@ -24,10 +27,19 @@ const LayoutWrapper = ({ children, user, isLoggedIn }) => {
                 router.pathname === '/login' ||
                 router.pathname === '/registration' ? (
                     <>
-                        <Header user={user} isLoggedIn={isLoggedIn} />
+                        <Drawer
+                            placement='top'
+                            visible={drawer}
+                            closable
+                            onClose={() => setDrawer(!drawer)}
+                            height={1024}
+                        >
+                            <DrawerMenu />
+                        </Drawer>
+                        <Header user={user} isLoggedIn={isLoggedIn} drawer={drawer} setDrawer={setDrawer} />
                         <Content>{children}</Content>
                         {router.pathname === '/' ||
-                        router.pathname === '/dashboard'
+                        router.pathname === '/dashboard' 
                         
                     ? (<Footer />)
                     : null}

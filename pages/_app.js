@@ -1,5 +1,6 @@
 import { DefaultSeo } from 'next-seo';
 import App from 'next/app';
+import 'antd/dist/antd.min.css';
 import LayoutPage from '../container/Layout/Layout';
 import { withData } from '../helpers/restriction';
 import AuthProvider from '../context/AuthProvider';

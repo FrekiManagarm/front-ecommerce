@@ -7,8 +7,8 @@ import 'antd/dist/antd.css';
 //-------------------------------------------------------------
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
-@import 'antd/dist/antd.css';
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+@import 'antd/dist/antd.css'; */
 
 
     * {

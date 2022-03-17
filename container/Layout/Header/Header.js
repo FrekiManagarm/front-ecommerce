@@ -3,19 +3,21 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Sticky from 'react-stickynode';
 import { useRouter, withRouter } from 'next/router';
-import { Select, Button, Drawer } from 'antd';
+import { Select, Drawer } from 'antd';
+// import MainMenu from './MainMenu';
 import Navbar from '../../../components/Navbar/Navbar';
 import HeaderWrapper, { LogoArea, MobileNavbar, Wrapper } from './Header.style';
 import dynamic from 'next/dynamic';
 import useTranslation from '../../../hooks/useTranslation';
 import LogoPic from '../../../public/images/Logo.jpg';
+import DrawerMenu from './DrawerMenu';
 
 const AuthMenu = dynamic(() => import('./AuthMenu'));
 const MainMenu = dynamic(() => import('./MainMenu'));
 const MobileMenu = dynamic(() => import('./MobileMenu'));
 const ProfileMenu = dynamic(() => import('./ProfileMenu'));
 
-const Header = ({ user, isLoggedIn }) => {
+const Header = ({ user, isLoggedIn, drawer, setDrawer }) => {
 
     const router = useRouter();
     const { locale } = router;
@@ -26,7 +28,7 @@ const Header = ({ user, isLoggedIn }) => {
     const sideBarHandler = () => {
         setVisible(!visible);
     }
-    
+     
     const { Option } = Select;
 
     const headerType = router.pathname === "/" ? "default" : "default";
@@ -42,7 +44,7 @@ const Header = ({ user, isLoggedIn }) => {
     <>
         <HeaderWrapper>
             <Sticky top={0} innerZ={1001} enableTransforms={false} activeClass='isHeaderSticky'>
-                <Navbwar 
+                <Navbar 
                     user={user}
                     logo={
                         <Link href="/" prefetch={false} locale={locale}>
@@ -51,7 +53,7 @@ const Header = ({ user, isLoggedIn }) => {
                             </a>
                         </Link>
                     }
-                    navMenu={<MainMenu visible={visible} setVisible={setVisible} />}
+                    navMenu={<MainMenu drawer={drawer} setDrawer={setDrawer} />}
                     authMenu={<AuthMenu />} 
                     isLogin={isLoggedIn}
                     visible={visible}
@@ -68,6 +70,7 @@ const Header = ({ user, isLoggedIn }) => {
                     // searchVisibility={}
                 />
                 
+                
                 {/* La on passe sur le mode mobile de la Navbar */}
                 <MobileNavbar>
                     <LogoArea>
@@ -78,7 +81,7 @@ const Header = ({ user, isLoggedIn }) => {
                 </MobileNavbar>
             </Sticky>
         </HeaderWrapper>
-        </>
+    </>
     )
 }
 
