@@ -25,6 +25,7 @@ const LayoutWrapper = ({ children, user, isLoggedIn }) => {
                 router.pathname === '/products/[id]' ||
                 router.pathname === '/dashboard' ||
                 router.pathname === '/login' ||
+                router.pathname === '/about' ||
                 router.pathname === '/registration' ? (
                     <>
                         <Drawer
