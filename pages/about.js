@@ -3,6 +3,7 @@ import React, { createElement, useState } from 'react';
 import marker from '../public/images/marker.png'
 import { Comment, Tooltip, Avatar } from 'antd';
 import moment from 'moment';
+import Link from 'next/link';
 import { DislikeOutlined, LikeOutlined, DislikeFilled, LikeFilled } from '@ant-design/icons';
 import styles from '../public/style/About.module.css'
 
@@ -81,9 +82,15 @@ const About = () => {
       <div>
         <small className={styles.small}>Work</small>
         <div style={{marginLeft: 'auto', marginRight: 'auto',width: '50%'}}>
-        <Image className={styles.image} src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" />
-        <Image className={styles.image} src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" />
-        <Image className={styles.image} src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" />
+        <Link href={'#'}>
+        <Image preview={false} className={styles.image} src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" />
+        </Link>
+        <Link href={'#'}>
+        <Image preview={false} className={styles.image} src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" />
+        </Link>
+        <Link href={'#'}>
+        <Image preview={false} className={styles.image} src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" />
+        </Link>
         </div>
       </div>
     </Content>
