@@ -1,19 +1,9 @@
 import { Layout, Image as AntImage } from 'antd';
 import React, { createElement, useState } from 'react';
-import marker from '../public/images/marker.png'
-import phone from '../public/images/aboutPhone.png'
-import user from '../public/images/aboutUser.png'
 import { Comment, Tooltip, Avatar } from 'antd';
 import moment from 'moment';
 import Link from 'next/link';
-import Image from 'next/image';
 import { DislikeOutlined, LikeOutlined, DislikeFilled, LikeFilled } from '@ant-design/icons';
-import styles from '../public/style/About.module.css'
-import { FooterLowerWrapper, FooterTextOpacityWrapper, FooterLogoWrapper, TextOpacity, TextSpan } from '../container/Layout/Footer/Footer.style';
-import InstagramPic from '../public/images/Instagram.png';
-import FacebookPic from '../public/images/Facebook.png';
-import TwitterPic from '../public/images/Twitter.png';
-import TwitchPic from '../public/images/Twitch.png';
 
 
 const { Content } = Layout;
@@ -177,49 +167,7 @@ const About = () => {
             }
           />
         </div>
-        <br />
-        <br />
-        <br />
-        <h2 className={styles.h3}>Marshightech@gmail.com</h2>
-        <div style={{ marginLeft: '760px', marginRight: 'auto', width: '40%' }}>
-          <Image src={marker} width={50} height={50} />
-          <span style={{ width: '20px', color: 'green' }}>texteunjkjkjjkjkjjkjkjkjk</span>
-          <Image style={{ marginRight: '10px' }} src={phone} width={50} height={50} />
-          <span style={{ width: '20px', color: 'green' }}>textejknjknjknjknjjkjkjjkj</span>
-          <Image src={user} width={50} height={50} />{" "}
-        </div>
-        <div style={{ marginLeft: 'auto', marginRight: 'auto', width: '50%' }}>
-          <span style={{ color: 'white', width: '190px', marginLeft: '220px' }}>102 cours Franklin Roosevelt <br /><span style={{ marginLeft: '220px' }}>33000 Bordeaux</span></span>
-          <span style={{ color: 'yellow' }}>Texte avant</span>
-          <span style={{ color: 'white', marginLeft: '40px' }}>+33.7.35.55.74.32</span>
-          <span style={{ color: 'yellow' }}>Textehy</span>
-          <span style={{ color: 'white' }}>Quo autem reprensetativ qui<br /><span style={{ marginLeft: '598px' }}>representativ quo</span></span>
-        </div>
-
-        <FooterLowerWrapper>
-          <FooterTextOpacityWrapper>
-            <TextOpacity><TextSpan>©</TextSpan>All Right reserved</TextOpacity>
-          </FooterTextOpacityWrapper>
-          <FooterLogoWrapper>
-            <Link href={"#"}>
-              <Image src={FacebookPic} width={50} height={50} />
-            </Link>
-            <Link href={"#"}>
-              <Image src={TwitterPic} width={50} height={50} />
-            </Link>
-            <Link href={"#"}>
-              <Image src={InstagramPic} width={50} height={50} />
-            </Link>
-            <Link href={"#"}>
-              <Image src={TwitchPic} width={50} height={50} />
-            </Link>
-          </FooterLogoWrapper>
-        </FooterLowerWrapper>
-
       </Content>
-
-
-
     </>
   )
 }

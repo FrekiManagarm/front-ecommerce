@@ -35,12 +35,13 @@ const LayoutWrapper = ({ children, user, isLoggedIn }) => {
                             onClose={() => setDrawer(!drawer)}
                             height={1024}
                         >
-                            <DrawerMenu />
+                            <DrawerMenu drawer={drawer} setDrawer={setDrawer} />
                         </Drawer>
                         <Header user={user} isLoggedIn={isLoggedIn} drawer={drawer} setDrawer={setDrawer} />
                         <Content>{children}</Content>
                         {router.pathname === '/' ||
-                        router.pathname === '/dashboard' 
+                        router.pathname === '/dashboard' ||
+                        router.pathname === '/about'
                         
                     ? (<Footer />)
                     : null}
