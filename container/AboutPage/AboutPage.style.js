@@ -9,6 +9,8 @@ export const AboutPageWrapper = styled.div`
 export const Section = styled.section`
     width: 100%;
     height: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
 `;
 
 export const Return = styled.p`
@@ -20,7 +22,7 @@ export const Title = styled.h1`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: ${props => props.font || '4rem'};
     color: white;
     margin-bottom: 2rem;
     font-weight: bold;
