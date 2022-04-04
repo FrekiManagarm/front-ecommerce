@@ -1,51 +1,49 @@
-import { Layout, Image as AntImage } from 'antd';
-import React, { createElement, useState } from 'react';
-import { Comment, Tooltip, Avatar } from 'antd';
-import moment from 'moment';
-import Link from 'next/link';
-import { DislikeOutlined, LikeOutlined, DislikeFilled, LikeFilled } from '@ant-design/icons';
-
-
-const { Content } = Layout;
+import React from 'react';
+// import { Comment, Tooltip, Avatar } from 'antd';
+// import { DislikeOutlined, LikeOutlined, DislikeFilled, LikeFilled } from '@ant-design/icons';
+import AboutPage from '../container/AboutPage/AboutPage';
+import { useRouter } from 'next/router';
+import { withData } from '../helpers/restriction';
+import GetAPIData from '../helpers/get_api_data';
 
 const About = () => {
+ 
+  // const [likes, setLikes] = useState(0);
+  // const [dislikes, setDislikes] = useState(0);
+  // const [action, setAction] = useState(null);
 
-  const [likes, setLikes] = useState(0);
-  const [dislikes, setDislikes] = useState(0);
-  const [action, setAction] = useState(null);
+  // const actions = [
+  //   <Tooltip key="comment-basic-like" title="Like">
+  //     <span style={{ color: 'white' }} onClick={like}>
+  //       {createElement(action === 'liked' ? LikeFilled : LikeOutlined)}
+  //       <span style={{ color: 'white' }} className="comment-action">{likes}</span>
+  //     </span>
+  //   </Tooltip>,
+  //   <Tooltip key="comment-basic-dislike" title="Dislike">
+  //     <span style={{ color: 'white' }} onClick={dislike}>
+  //       {createElement(action === 'disliked' ? DislikeFilled : DislikeOutlined)}
+  //       <span style={{ color: 'white' }}>{dislikes}</span>
+  //     </span>
+  //   </Tooltip>,
+  //   <span style={{ color: 'white' }} key="comment-basic-reply-to">Reply to</span>,
+  // ];
 
-  const actions = [
-    <Tooltip key="comment-basic-like" title="Like">
-      <span style={{ color: 'white' }} onClick={like}>
-        {createElement(action === 'liked' ? LikeFilled : LikeOutlined)}
-        <span style={{ color: 'white' }} className="comment-action">{likes}</span>
-      </span>
-    </Tooltip>,
-    <Tooltip key="comment-basic-dislike" title="Dislike">
-      <span style={{ color: 'white' }} onClick={dislike}>
-        {createElement(action === 'disliked' ? DislikeFilled : DislikeOutlined)}
-        <span style={{ color: 'white' }}>{dislikes}</span>
-      </span>
-    </Tooltip>,
-    <span style={{ color: 'white' }} key="comment-basic-reply-to">Reply to</span>,
-  ];
+  // const like = () => {
+  //   setLikes(1);
+  //   setDislikes(0);
+  //   setAction('liked');
+  // };
 
-  const like = () => {
-    setLikes(1);
-    setDislikes(0);
-    setAction('liked');
-  };
-
-  const dislike = () => {
-    setLikes(0);
-    setDislikes(1);
-    setAction('disliked');
-  };
+  // const dislike = () => {
+  //   setLikes(0);
+  //   setDislikes(1);
+  //   setAction('disliked');
+  // };
 
   return (
     <>
 
-      <Content className={styles.layoutStyles}>
+      {/* <Content className={styles.layoutStyles}>
         <div>
           <h1 className={styles.h1}>About us</h1>
           <h3 className={styles.h3}>L'endroit ou vous réaliserez vos plus grands rêves</h3>
@@ -167,7 +165,10 @@ const About = () => {
             }
           />
         </div>
-      </Content>
+        
+
+      </Content> */}
+      <AboutPage />
     </>
   )
 }
