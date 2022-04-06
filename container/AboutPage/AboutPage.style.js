@@ -10,7 +10,7 @@ export const Section = styled.section`
     width: 100%;
     height: 100%;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 130px;
 `;
 
 export const Return = styled.p`
@@ -26,7 +26,7 @@ export const Title = styled.h1`
     color: white;
     margin-bottom: 2rem;
     font-weight: bold;
-    margin-top: 200px;
+    margin-top: 100px;
 `;
 
 export const SubTitle = styled.h2`
@@ -35,8 +35,7 @@ export const SubTitle = styled.h2`
     font-size: 2rem;
     color: white;
     margin-bottom: 10rem;
-    opacity : 0.5
-    background-color: yellow;
+    opacity : 0.5;
 `
 
 export const SideText = styled.h4`
@@ -53,7 +52,21 @@ export const ImageWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+`;
 
+export const CommentContent = styled.p`
+    color: white;
+    font-size: 25px;
+    margin-left: 50px;
+`;
 
+export const CommentWrapper = styled.section`
+    margin-left: 50px;
+    margin-right: 50px;
+`;
+
+export const CommentAuthor = styled.span`
+    color: white;
+    margin-left: 50px;
 `;
 
