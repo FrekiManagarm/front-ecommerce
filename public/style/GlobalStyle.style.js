@@ -7,9 +7,7 @@ import 'antd/dist/antd.css';
 //-------------------------------------------------------------
 
 const GlobalStyle = createGlobalStyle`
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
-@import 'antd/dist/antd.css'; */
-
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap'); */
 
     * {
         box-sizing: inherit;
@@ -72,12 +70,6 @@ const GlobalStyle = createGlobalStyle`
   background-color: black;
 }
 
-.ant-drawer-close {
-  color: white;
-  padding: 30px 50px;
-  font-size: 30px;
-}
-
 .ant-drawer-close:hover {
   color: red;
 }
@@ -87,6 +79,20 @@ const GlobalStyle = createGlobalStyle`
   justify-content: flex-end;
 }
 
+.isHeaderSticky {
+  .sticky-inner-wrapper {
+    .navbar {
+      &.is_transparent {
+        background-color: black;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+    }
+    nav.transparent {
+      background-color: ${themeGet('color.1', '#ffffff')};
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
 `;
 
 export default GlobalStyle;

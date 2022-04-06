@@ -115,7 +115,7 @@ const DrawerMenu = () => {
                     </WrapperDown>
                 </WrapperRightPart>
             </WrapperAll>
-  )
+    )
 }
 
 export default withRouter(DrawerMenu)
