@@ -11,15 +11,13 @@ import Image5 from '../../public/images/About_image5.jpg';
 import Image6 from '../../public/images/About_image6.jpg';
 import Image7 from '../../public/images/About_image7.jpg';
 import Image8 from '../../public/images/About_image8.jpg';
-import { Comment, Avatar, Tooltip } from 'antd';
-import moment from 'moment';
+import { Comment } from 'antd';
 
 const AboutPage = ({ user, pageData }) => {
 
   const router = useRouter();
   const { locale } = router;
-
-
+  
   return (
     <>
     <AboutPageWrapper>
