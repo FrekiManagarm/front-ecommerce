@@ -20,7 +20,6 @@ const LayoutWrapper = ({ children, user, isLoggedIn }) => {
         <Layout>
             <LayoutProvider>
                 {router.pathname === '/' ||
-                router.pathname === '/configurator' ||
                 router.pathname === '/products' ||
                 router.pathname === '/products/[id]' ||
                 router.pathname === '/dashboard' ||
@@ -31,7 +30,7 @@ const LayoutWrapper = ({ children, user, isLoggedIn }) => {
                             placement='top'
                             visible={drawer}
                             closable
-                            onClose={() => setDrawer(!drawer)}
+                            
                             height={1024}
                         >
                             <DrawerMenu />

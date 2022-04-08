@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 // Global Infos components
-export const WrapperButton = styled.div``;
+export const WrapperButton = styled.div`
+    margin-bottom: 30px;
+`;
 export const Title = styled.h1`
     color: white;
     font-size: 50px ;
@@ -32,14 +34,31 @@ export const WrapperLink = styled.div`
 export const WrapperSousLinkTitle = styled.div`
     color: white;
     font-size: 50px;
+
+    a {
+        color: white;
+
+        &:hover {
+            color: grey;
+        }
+    }
+
 `;
 export const WrapperSousLink = styled.div`
     display: flex;
 `;
 export const WrapperSousLinkUnit = styled.div`
     margin-right: 50px;
-    color: gray;
+    color: grey;
     font-size: 32px;
+
+    a {
+        color: grey;
+
+        &:hover {
+            color: white;
+        }
+    }
 `;
 
 // Right Part
@@ -64,7 +83,7 @@ export const WrapperImageUnit = styled.div`
 export const ButtonBurger = styled.div`
      width: 42px;
      height: 24px;
-     background-color: black;
+     background-color: transparent;
      cursor: pointer;
      position: relative;
      margin-top: 30px;
@@ -72,7 +91,7 @@ export const ButtonBurger = styled.div`
 
 export const TopBar = styled.span`
     width: 60%;
-    height: 1px;
+    height: 2px;
     top: 1%;
     background-color: white;
     position: absolute;
@@ -84,7 +103,7 @@ export const TopBar = styled.span`
 export const MiddleBar = styled.span`
     position: absolute;
     width: 52%;
-    height: 1px;
+    height: 2px;
     top: 50%;
     left: 40%;
     background-color: white;
@@ -93,7 +112,7 @@ export const MiddleBar = styled.span`
 
 export const DownBar = styled.span`
     width: 60%;
-    height: 1px;
+    height: 2px;
     top: 100%;
     background-color: white;
     position: absolute;

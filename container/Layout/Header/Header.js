@@ -31,7 +31,7 @@ const Header = ({ user, isLoggedIn, drawer, setDrawer }) => {
      
     const { Option } = Select;
 
-    const headerType = router.pathname === "/" ? "default" : "default";
+    const headerType = router.pathname === "/" ? "transparent" : "default";
     const auth = typeof user === 'string' ? JSON.parse(user) : user;
     const { t } = useTranslation();
 
@@ -49,7 +49,7 @@ const Header = ({ user, isLoggedIn, drawer, setDrawer }) => {
                     logo={
                         <Link href="/" prefetch={false} locale={locale}>
                             <a>
-                                <Image src={LogoPic} width={100} height={100} />
+                                <Image src={LogoPic} width={60} height={60} />
                             </a>
                         </Link>
                     }
