@@ -24,6 +24,7 @@ const LayoutWrapper = ({ children, user, isLoggedIn }) => {
                 router.pathname === '/products/[id]' ||
                 router.pathname === '/dashboard' ||
                 router.pathname === '/login' ||
+                router.pathname === '/about' ||
                 router.pathname === '/registration' ? (
                     <>
                         <Drawer
@@ -38,7 +39,8 @@ const LayoutWrapper = ({ children, user, isLoggedIn }) => {
                         <Header user={user} isLoggedIn={isLoggedIn} drawer={drawer} setDrawer={setDrawer} />
                         <Content>{children}</Content>
                         {router.pathname === '/' ||
-                        router.pathname === '/dashboard' 
+                        router.pathname === '/dashboard' ||
+                        router.pathname === '/about' 
                         
                     ? (<Footer />)
                     : null}
