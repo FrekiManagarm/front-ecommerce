@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
     textarea,
     span,
     div {
-        font-family: 'Poppins', sans-serif; 
+        /* font-family: 'Poppins', sans-serif; */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
@@ -58,8 +58,8 @@ const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
-        font-family: 'Poppins', sans-serif;
-        -webkit-tap-highlight-color: transparent;
+        /* font-family: 'Poppins', sans-serif; */
+        -webkit-tap-highlight-color: transparent; 
         //overflow-y: scroll !important;
     }
     //tes global styles et tes classes customs que tu veux modifier à l'état global de ton application

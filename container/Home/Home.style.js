@@ -15,7 +15,12 @@ export const Title = styled.h1`
 `;
 
 export const WrapperVideo = styled.div`
-
+    img {
+        .Video {
+            height: 100vh;
+            width: 100vh;
+        }
+    }
 `;
 
 export default Wrapper;

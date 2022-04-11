@@ -5,20 +5,27 @@ import Wrapper, {
     Title,
 } from '../Home/Home.style';
 import Image from 'next/image';
-import ImgHome from '../../public/images/imageHome1.jpg';
+
+import { useState, UseEffect } from 'react';
 
 const HomePage = () => {
+
+    const [limit, setLimit] = useState(null);
+
+    UseEffect(() => {
+        setLimit(getDeviceType());
+    }, []);
+
     return (
         <>
-            <Wrapper> 
-
+            <Wrapper>
                     <WrapperVideo>
                         <Image 
-                            src={ImgHome}
+                            src="../../public/images/imageHome1.jpg"
                             alt={"Home Page Image Mars High-Tech"}
-                            width="1450px"
-                            height="800px"
-                            className='Video'
+                            width={limit === 'desktop' ? '1024px' : limit === 'tablet' ? '760px' : limit === 'mobile' ? '480px'}
+                            height={limit === 'desktop' ? '900px' : limit === 'tablet' ? '400px' : limit === 'mobile' ? '200px'}
+                            className="Video"
                         />
                     </WrapperVideo>
                     <WrapperTitle>
