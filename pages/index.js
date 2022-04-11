@@ -1,8 +1,10 @@
 import Head from 'next/head';
+import { getDeviceType } from '../helpers/get_device_type';
 import { withData } from '../helpers/restriction';
 import { Navbar } from '../components/Navbar/Navbar';
 import GetAPIData from '../helpers/get_api_data';
 import HomePage from '../container/Home/HomePage';
+import { useEffect, useState } from 'react';
 
 // La page home est également un point culminant de ton app après le _app.js et _document.js
 // c'est ta page home ou / si tu préfère
@@ -11,6 +13,14 @@ import HomePage from '../container/Home/HomePage';
 // elle te sera d'un grand secours croit moi.
 
 const Home = () => {
+
+  const [limit, setLimit] = useState(null);
+
+  useEffect(() => {
+    setLimit(getDeviceType())
+  }, [])
+
+  console.log(limit, 'device type');
 
   
   return (

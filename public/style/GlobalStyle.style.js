@@ -79,6 +79,16 @@ const GlobalStyle = createGlobalStyle`
   justify-content: flex-end;
 }
 
+.drawer_navbar {
+  height: 100%;
+  width: 100%;
+}
+
+/* .ant-drawer-content-wrapper {
+  height: 100vh;
+  width: 100vw;
+} */
+
 .isHeaderSticky {
   .sticky-inner-wrapper {
     .navbar {

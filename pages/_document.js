@@ -32,7 +32,7 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <meta name="theme-color" content="#01073a" />
+                    <meta name="theme-color" content="#000000" />
                     {/* <meta name="description" content="Heyo" />
                     <meta name="keywords" content="React, React js, Next, Next js" /> */}
                     {/* <link rel="icon" href="{favicon2}" type="image/png" sizes="16x16" /> */}

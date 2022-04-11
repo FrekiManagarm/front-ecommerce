@@ -25,14 +25,15 @@ const LayoutWrapper = ({ children, user, isLoggedIn }) => {
                 router.pathname === '/dashboard' ||
                 router.pathname === '/login' ||
                 router.pathname === '/about' ||
+                router.pathname === '/contact' ||
                 router.pathname === '/registration' ? (
                     <>
                         <Drawer
                             placement='top'
                             visible={drawer}
                             closable
-                            
-                            height={1024}
+                            height={2000}
+                            className="drawer_navbar"
                         >
                             <DrawerMenu />
                         </Drawer>
