@@ -22,13 +22,18 @@ export const Title = styled.div`
     left: 40%;
 
     @media only screen and (min-width: 668px) {
-        font-size: 50px;
+        font-size: 80px;
         left: 10%;
     }
 
     @media only screen and (min-width: 1024px) {
         font-size: 120px;
-        left: 20%;
+        left: 10%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 150px;
+        left: 10%;
     }
 `;
 

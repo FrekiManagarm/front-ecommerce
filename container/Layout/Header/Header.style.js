@@ -29,9 +29,10 @@ const HeaderWrapper = styled.header`
 export const MobileNavbar = styled.nav`
   display: none;
   padding: 0 25px;
+  background-color: black;
   align-items: center;
   justify-content: space-between;
-  min-height: 82px;
+  min-height: 102px;
   width: 100%;
   @media only screen and (max-width: 990px) {
     display: flex;
