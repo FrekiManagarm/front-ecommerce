@@ -9,7 +9,10 @@ const nextConfig = {
   i18n: {
     locales: ['en', 'fr'],
     defaultLocale: "fr",
-  }
+  },
+  images: {
+    domains: ['https://i.imgur.com', 'i.imgur.com', '*'],
+  },
 }
 
 module.exports = nextConfig;
