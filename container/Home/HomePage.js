@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import Wrapper, {
     WrapperVideo,
     WrapperTitle,
@@ -6,32 +6,22 @@ import Wrapper, {
 } from '../Home/Home.style';
 import Image from 'next/image';
 
-import { useState, UseEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const HomePage = () => {
 
     const [limit, setLimit] = useState(null);
 
-    UseEffect(() => {
+    useEffect(() => {
         setLimit(getDeviceType());
-    }, []);
+    }, [])
 
     return (
         <>
-            <Wrapper>
-                    <WrapperVideo>
-                        <Image 
-                            src="../../public/images/imageHome1.jpg"
-                            alt={"Home Page Image Mars High-Tech"}
-                            width={limit === 'desktop' ? '1024px' : limit === 'tablet' ? '760px' : limit === 'mobile' ? '480px'}
-                            height={limit === 'desktop' ? '900px' : limit === 'tablet' ? '400px' : limit === 'mobile' ? '200px'}
-                            className="Video"
-                        />
-                    </WrapperVideo>
-                    <WrapperTitle>
-                        <Title>Bienvenue sur <br /> Mars High Tech</Title>
-                    </WrapperTitle>
+            <Wrapper> 
+                <Title>Bienvenue sur <br/>Mars High-Tech</Title>
             </Wrapper>
+            
         </>
     );
 }

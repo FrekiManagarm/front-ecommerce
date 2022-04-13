@@ -23,13 +23,15 @@ import TwitterPic from '../../../public/images/Twitter.png';
 import TwitchPic from '../../../public/images/Twitch.png';
 import YoutubePic from '../../../public/images/Youtube.png';
 
-const DrawerMenu = () => {
+const DrawerMenu = ({ drawer, setDrawer }) => {
   return (
     <WrapperAll>
                 <WrapperDrawer>
                     <WrapperLink>
                         <WrapperSousLinkTitle>
-                            <Link href='/about'>A propos</Link>
+                            <Link href='/about'>
+                               <a onClick={()=>setDrawer(!drawer)}>A propos</a>
+                            </Link>
                         </WrapperSousLinkTitle>
                         <WrapperSousLink>
                             <WrapperSousLinkUnit>
@@ -68,20 +70,28 @@ const DrawerMenu = () => {
                                 <Link href="/cgu">Conditions</Link>
                             </WrapperSousLinkUnit>
                             <WrapperSousLinkUnit>
-                                <Link href="/prices">Tarifs</Link>
+                                <Link href="/prices">
+                                <a onClick={() => setDrawer(!drawer)}>Tarifs</a>
+                                </Link>
                             </WrapperSousLinkUnit>
                         </WrapperSousLink>
                     </WrapperLink>
                     <WrapperLink>
                         <WrapperSousLinkTitle>
-                            <Link href="/contact">Contact</Link>
+                            <Link href="/contact">
+                            <a onClick={() => setDrawer(!drawer)}>Contact</a>
+                            </Link>
                         </WrapperSousLinkTitle>
                         <WrapperSousLink>
                             <WrapperSousLinkUnit>
-                                <Link href="/networks">Réseaux</Link>
+                                <Link href="/networks">
+                                    <a onClick={() => setDrawer(!drawer)}>Réseaux</a>
+                                </Link>
                             </WrapperSousLinkUnit>
                             <WrapperSousLinkUnit>
-                                <Link href="/partners">Partenaires</Link>
+                                <Link href="/partners">
+                                    <a onClick={() => setDrawer(!drawer)}>Partenaires</a>
+                                </Link>
                             </WrapperSousLinkUnit>
                         </WrapperSousLink>
                     </WrapperLink>

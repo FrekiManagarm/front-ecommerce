@@ -28,6 +28,8 @@ const Header = ({ user, isLoggedIn, drawer, setDrawer }) => {
     const sideBarHandler = () => {
         setVisible(!visible);
     }
+
+
      
     const { Option } = Select;
 
