@@ -21,6 +21,7 @@ const HomePage = () => {
             <Wrapper> 
                 <Title>Bienvenue sur <br/>Mars High-Tech</Title>
             </Wrapper>
+            
         </>
     );
 }
