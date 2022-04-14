@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import Wrapper, {
-    WrapperVideo,
-    WrapperTitle,
     Title,
     FirstSection,
-    TitleSection,
     ImageWrapper,
-    SubtitleSection,
+    Subtitle,
+    SiteTitle,
+    TextSection,
+    ImageBg,
 } from '../Home/Home.style';
 import Image from 'next/image';
 
@@ -21,14 +21,12 @@ const HomePage = () => {
     return (
         <>
             <Wrapper> 
-                <Title>Bienvenue sur <br/>Mars High-Tech</Title>
+                <SiteTitle>Bienvenue sur <br/>Mars High-Tech</SiteTitle>
             </Wrapper>
             <FirstSection>
-                <ImageWrapper>
-                    <Image src="https://i.imgur.com/fA9Nu8M.jpg" layout='responsive' width={1500} height={1000} className="image" />
-                    <TitleSection>Conception de courts moyens <br/> et longs métrages</TitleSection>
-                    <SubtitleSection>En savoir plus</SubtitleSection>
-                </ImageWrapper>
+                <ImageBg />
+                    <Title>Conception de courts moyens <br/> et longs métrages</Title>
+                    <Subtitle>En savoir plus</Subtitle>
             </FirstSection>
         </>
     );
