@@ -11,7 +11,7 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@styled-system/theme-get": "^5.1.2",
-    "antd": "^4.19.1",
+    "antd": "^4.19.5",
     "cors": "^2.8.5",
     "country-flag-icons": "^1.4.19",
     "dotenv": "^10.0.0",

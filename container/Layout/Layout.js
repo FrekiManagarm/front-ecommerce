@@ -24,21 +24,24 @@ const LayoutWrapper = ({ children, user, isLoggedIn }) => {
                 router.pathname === '/products/[id]' ||
                 router.pathname === '/dashboard' ||
                 router.pathname === '/login' ||
+                router.pathname === '/about' ||
+                router.pathname === '/contact' ||
                 router.pathname === '/registration' ? (
                     <>
                         <Drawer
                             placement='top'
                             visible={drawer}
                             closable
-                            
-                            height={1024}
+                            height={2000}
+                            className="drawer_navbar"
                         >
                             <DrawerMenu />
                         </Drawer>
                         <Header user={user} isLoggedIn={isLoggedIn} drawer={drawer} setDrawer={setDrawer} />
                         <Content>{children}</Content>
                         {router.pathname === '/' ||
-                        router.pathname === '/dashboard' 
+                        router.pathname === '/dashboard' ||
+                        router.pathname === '/about' 
                         
                     ? (<Footer />)
                     : null}

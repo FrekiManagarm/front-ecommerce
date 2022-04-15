@@ -21,6 +21,8 @@ export const Description = styled.p`
 export const WrapperAll = styled.div`
     display: flex;
     justify-content: space-between;
+    height: 100%;
+    width: 100%;
 `;
 export const WrapperDrawer = styled.div`
     color: white;

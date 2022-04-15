@@ -46,7 +46,7 @@ export const FooterTextOpacityWrapper = styled.div`
 `;
 
 export const FooterLogoWrapper = styled.div`
-      margin: 0 50px 0 0;
+    margin: 0 50px 0 0;
 `;
 
 export const Link = styled.a`
