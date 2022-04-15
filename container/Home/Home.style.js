@@ -12,10 +12,9 @@ const Wrapper = styled.div`
     -o-background-size: cover;
     background-size: cover;
 
-    .video {
+    #video {
         width: 100vw;
         height: 100vh;
-        position: fixed;
         z-index: -1;
     }
 `;

@@ -13,6 +13,9 @@ const nextConfig = {
   images: {
     domains: ['https://i.imgur.com', 'i.imgur.com', '*'],
   },
+  compiler: {
+    styledComponents: true,
+  },
 }
 
 module.exports = nextConfig;

@@ -31,7 +31,9 @@ const HomePage = () => {
     return (
         <>
             <Wrapper> 
-                <ReactPlayer playing loop muted url={'https://youtu.be/Zczl2wUsD3Q'} height="100vh" width="100vw" />
+                <ReactPlayer height="100vh" width="100vw" loop muted playing url='https://i.imgur.com/7g8abNj.mp4'  config={{
+                    youtube: { playerVars: { showinfo: 1, preload: true } }
+                }} style={{ pointerEvents: 'none' }} />
                 <SiteTitle>Bienvenue sur <br/>Mars High-Tech</SiteTitle>
             </Wrapper>
             <FirstSection>
