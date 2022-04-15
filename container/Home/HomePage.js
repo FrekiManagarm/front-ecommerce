@@ -18,6 +18,7 @@ import Wrapper, {
     FourthTitle,
 } from '../Home/Home.style';
 import Image from 'next/image';
+import ReactPlayer from 'react-player';
 
 const HomePage = () => {
 
@@ -30,39 +31,40 @@ const HomePage = () => {
     return (
         <>
             <Wrapper> 
+                <ReactPlayer playing loop muted url={'https://youtu.be/Zczl2wUsD3Q'} height="100vh" width="100vw" />
                 <SiteTitle>Bienvenue sur <br/>Mars High-Tech</SiteTitle>
             </Wrapper>
             <FirstSection>
                 <ImageBg />
-                <Title>Conception de courts moyens <br/> et longs métrages</Title>
+                <Title>Conception de courts, moyens <br/> et longs métrages.</Title>
                 <Subtitle>En savoir plus</Subtitle>
             </FirstSection>
-            <div className='description'>
+            {/* <div className='description'>
                 <h2></h2>
                 <p></p>
-            </div>
+            </div> */}
             <SecondSection>
                 <SecondImageBg />
                 <SecondTitle>Du matériel de haute qualité <br/> à votre disposition</SecondTitle>
             </SecondSection>
             <div className='description'>
                 <h2>Réalisez vos projets <br /> avec nous.</h2>
-                <p>Nous aimons mobiliser toutes nos conaissances et notre expérience <br/> au service de nos clients</p>
+                <p>Nous aimons mobiliser toutes nos connaissances et notre expérience <br/> au service de nos clients.</p>
             </div>
             <ThirdSection>
                 <ThridTitle>Store</ThridTitle>
                 <ThirdImageBg />
             </ThirdSection>
             <div className='description'>
-                <h2></h2>
-                <p></p>
+                <h2>Retrouvez tous notre matériel <br /> dans la rubrique Store</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
             <FourthSection>
                 <FourthTitle>Contact</FourthTitle>
                 <FourthImageBg />
             </FourthSection>
             <div className='description'>
-                <h2></h2>
+                <h2>Contactez-nous dès <br /> maintenant</h2>
                 <p></p>
             </div>
         </>

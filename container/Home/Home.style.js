@@ -6,11 +6,18 @@ const Wrapper = styled.div`
     height: 100vh;
     background-color: black;
     position: relative;
-    background: url('https://i.imgur.com/fA9Nu8M.jpg') no-repeat center center;
+    /* background: url('https://i.imgur.com/fA9Nu8M.jpg') no-repeat center center; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    .video {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: -1;
+    }
 `;
 
 export const SiteTitle = styled.div`
