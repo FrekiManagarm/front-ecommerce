@@ -60,7 +60,7 @@ export const ImageBg = styled.div`
     background-size: cover;
     opacity: 0.5;
     width: 90vw;
-    height: 60vh;
+    height: 70vh;
 `;
 
 export const Title = styled.h2`
@@ -71,106 +71,188 @@ export const Title = styled.h2`
     letter-spacing: 10px;
     font-size: 75px;
 
-    @media only screen and (min-width: 668px) {
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
         font-size: 35px;
         top: 35rem;
         left: 4%;
         letter-spacing: 5px;
     } 
 
-    @media only screen and (min-width: 700px) {
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
         font-size: 50px;
         top: 18rem;
         left: 2rem;
     }
 
-    @media only screen and (min-width: 870px) {
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
         font-size: 40px;
         top: 18rem;
+        left: 4rem;
     }
 
-    @media only screen and (min-width: 900px) {
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
         font-size: 50px;
         top: 20rem;
+        left: 2rem;
     }
 
-    @media only screen and (min-width: 1024px) {
-        font-size: 50px;
-        top: 17rem;
-    }
-
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
         letter-spacing: 20px;
         font-size: 50px;
-        top: 35rem;
+        top: 30rem;
         left: 4rem;
     } 
-
-    @media only screen and (min-width: 2400px) {
-        font-size: 100px;
-        top: 65rem;
-        left: 5rem;
-    }
-
-    @media only screen and (min-width: 2100px) {
-        
-    }
 `;
 
-export const Subtitle = styled.h2`
+export const Subtitle = styled.a`
     position: absolute;
     top: 45rem;
     left: 3rem;
     color: white;
     font-size: 30px;
 
-    @media only screen and (min-width: 600px) {
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
         font-size: 20px;
         top: 45rem;
         left: 4%;
     } 
 
-    @media only screen and (min-width: 700px) {
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
         font-size: 20px;
         top: 29rem;
         left: 2rem;
-    }
+    } 
 
-    @media only screen and (min-width: 800px) {
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
         font-size: 20px;
         top: 29rem;
         left: 2rem;
-    }
+    } 
 
-    @media only screen and (min-width: 900px) {
-
-    }
-
-    @media only screen and (min-width: 1024px) {
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
         font-size: 20px;
-        top: 29rem;
-    }
+        top: 32rem;
+    } 
 
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
         font-size: 25px;
-        top: 46rem;
+        top: 40rem;
         left: 4rem;
-    }
-
-    @media only screen and (min-width: 2400px) {
-        font-size: 40px;
-        top: 85rem;
-        left: 6rem;
-    }
-
-    @media only screen and (min-width: 2100px) {
-        font-size: 75px;
     }
 
 `;
 
-export const TextSection = styled.div`
+export const SecondSection = styled.div`
+    position: relative;
+    background-color: black;
+    padding: 5%;
+`;
 
+export const SecondImageBg = styled.div`
+    background-color: black;
+    position: relative;
+    background: url('https://i.imgur.com/NUvCRTI.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.5;
+    width: 90vw;
+    height: 70vh;
+`;
+
+export const SecondTitle = styled.h2`
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 20px;
+    top: 30rem;
+    left: 7rem;
+
+    /* Extra small devices (phones, 600px and down) */
+    @media screen and (max-width: 600px) {
+        
+    } 
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media screen and (min-width: 600px) {
+        
+    } 
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media screen and (min-width: 768px) {
+        
+    } 
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media screen and (min-width: 992px) {
+        
+    } 
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media screen and (min-width: 1200px) {
+        
+    }
+`;
+
+export const ThirdSection = styled.div`
+    position: relative;
+    background-color: black;
+    padding: 5%;
+`;
+
+export const ThirdImageBg = styled.div`
+    background-color: black;
+    position: relative;
+    background: url('https://i.imgur.com/BlIu0T4.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.5;
+    width: 90vw;
+    height: 70vh;
+`;
+
+export const ThridTitle = styled.h2`
+    color: white;
+    font-size: 50px;
+    padding-bottom: 2rem;
+`;
+
+export const FourthSection = styled.div`
+    position: relative;
+    background-color: black;
+    padding: 5%;
+`;
+
+export const FourthTitle = styled.div`
+    color: white;
+    font-size: 50px;
+    padding-bottom: 2rem;
+`;
+
+export const FourthImageBg = styled.div`
+    background-color: black;
+    position: relative;
+    background: url('https://i.imgur.com/Xg4upLd.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.5;
+    width: 90vw;
+    height: 70vh;
 `;
 
 export default Wrapper;

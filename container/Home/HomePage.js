@@ -7,6 +7,15 @@ import Wrapper, {
     SiteTitle,
     TextSection,
     ImageBg,
+    SecondSection,
+    SecondImageBg,
+    SecondTitle,
+    ThirdSection,
+    ThirdImageBg,
+    ThridTitle,
+    FourthSection,
+    FourthImageBg,
+    FourthTitle,
 } from '../Home/Home.style';
 import Image from 'next/image';
 
@@ -25,9 +34,21 @@ const HomePage = () => {
             </Wrapper>
             <FirstSection>
                 <ImageBg />
-                    <Title>Conception de courts moyens <br/> et longs métrages</Title>
-                    <Subtitle>En savoir plus</Subtitle>
+                <Title>Conception de courts moyens <br/> et longs métrages</Title>
+                <Subtitle>En savoir plus</Subtitle>
             </FirstSection>
+            <SecondSection>
+                <SecondImageBg />
+                <SecondTitle>Du matériel de haute qualité <br/> à votre disposition</SecondTitle>
+            </SecondSection>
+            <ThirdSection>
+                <ThridTitle>Store</ThridTitle>
+                <ThirdImageBg />
+            </ThirdSection>
+            <FourthSection>
+                <FourthTitle>Contact</FourthTitle>
+                <FourthImageBg />
+            </FourthSection>
         </>
     );
 }
