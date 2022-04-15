@@ -85,10 +85,21 @@ const GlobalStyle = createGlobalStyle`
   width: 100%;
 }
 
-/* .ant-drawer-content-wrapper {
-  height: 100vh;
-  width: 100vw;
-} */
+.description {
+  padding: 5%;
+  background-color: black;
+  
+  h2 {
+    color: white;
+    font-size: 75px;
+    letter-spacing: 10px;
+  }
+
+  p {
+    color: white;
+    font-size: 30px;
+  }
+}
 
 .isHeaderSticky {
   .sticky-inner-wrapper {
