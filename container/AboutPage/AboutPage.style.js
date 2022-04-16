@@ -13,7 +13,6 @@ export const deviceLandscape = {
     mobileSizePlus: `(min-width : ${size.mobileSizePlus})`,
     tabletSizeMini: `(min-width : ${size.tabletSizeMini})`,
     tabletSizeStandard: `(min-width : ${size.tabletSizeStandard})`,
-    desktopSize: `(min-width : ${size.desktopSize})`
 }
 
 export const devicePortrait = {
@@ -35,11 +34,6 @@ export const Section = styled.section`
     height: 100%;
     margin-bottom: 50px;
     margin-top: 130px;
-
-    @media only screen and (max-width: 991px) {
-    
-        
-  }
 `;
 
 export const Return = styled.p`
@@ -80,7 +74,10 @@ export const Title = styled.h1`
     }
 
     @media ${devicePortrait.tabletSizeStandard} {
-        
+        font-size: ${props => '3rem'};
+    }
+    @media ${devicePortrait.desktopSize} {
+        font-size: ${props => '5rem'};
     }
 `;
 
