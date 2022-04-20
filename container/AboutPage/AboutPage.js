@@ -35,7 +35,8 @@ const AboutPage = ({ user, pageData }) => {
           src={Image1} 
           alt={"image 1"}
           width="1000px" 
-          height="700px" 
+          height="700px"
+          quality="50%"
           />
         </ImageWrapper>
       </Section>
@@ -49,6 +50,7 @@ const AboutPage = ({ user, pageData }) => {
             alt={"image 1"}
             width="1000px"
             height="700px"
+            quality="50%"
             />
           </ImageWrapper>
         </Section>
@@ -62,6 +64,7 @@ const AboutPage = ({ user, pageData }) => {
               alt={"image 1"}
               width="1000px"
               height="700px"
+              quality="50%"
               />
             </Link>
             <Link href={'#'}>
@@ -70,6 +73,7 @@ const AboutPage = ({ user, pageData }) => {
               alt={"image 1"}
               width="1000px"
               height="700px"
+              quality="50%"
               />
             </Link>
             <Link href={'#'}>
@@ -78,6 +82,7 @@ const AboutPage = ({ user, pageData }) => {
               alt={"image 1"}
               width="1000px"
               height="700px"
+              quality="50%"
               />
             </Link>
           </ImageWrapper>
@@ -89,7 +94,7 @@ const AboutPage = ({ user, pageData }) => {
           <Comment
             user={user}
             author={<CommentAuthor>Han Solo</CommentAuthor>}
-            avatar={<Image src={Image6} alt="Han Solo" width={50} height={50} />}
+            avatar={<Image src={Image6} alt="Han Solo" width={50} height={50} quality="50%" />}
 
             content={
               <CommentContent>
@@ -104,7 +109,7 @@ const AboutPage = ({ user, pageData }) => {
           <Comment
             user={user}
             author={<CommentAuthor>Han Solo</CommentAuthor>}
-            avatar={<Image src={Image7} alt="Han Solo" width={50} height={50} />}
+            avatar={<Image src={Image7} alt="Han Solo" width={50} height={50} quality="50%"/>}
 
             content={
               <CommentContent>
@@ -119,7 +124,7 @@ const AboutPage = ({ user, pageData }) => {
           <Comment
             user={user}
             author={<CommentAuthor>Han Solo</CommentAuthor>}
-            avatar={<Image src={Image8} alt="Han Solo" width={50} height={50} />}
+            avatar={<Image src={Image8} alt="Han Solo" width={50} height={50} quality="50%"/>}
 
             content={
               <CommentContent>
