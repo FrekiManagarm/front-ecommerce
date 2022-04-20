@@ -6,11 +6,17 @@ export const Wrapper = styled.div`
     height: 100vh;
     background-color: black;
     position: relative;
-    background: url('https://i.imgur.com/fA9Nu8M.jpg') no-repeat center center;
+    /* background: url('https://i.imgur.com/fA9Nu8M.jpg') no-repeat center center; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    #video {
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
 `;
 
 export const SiteTitle = styled.div`
@@ -20,18 +26,23 @@ export const SiteTitle = styled.div`
     top: 40%;
     left: 40%;
 
+    @media only screen and (max-width: 600px) {
+        font-size: 40px;
+        left: 4rem;
+    }
+
     @media only screen and (min-width: 668px) {
         font-size: 80px;
-        left: 10%;
+        left: 10rem;
     }
 
     @media only screen and (min-width: 1024px) {
         font-size: 120px;
-        left: 10%;
+        left: 10rem;
     }
     @media only screen and (min-width: 1200px) {
         font-size: 150px;
-        left: 10%;
+        left: 10rem;
     }
 `;
 
@@ -180,17 +191,24 @@ export const SecondTitle = styled.h2`
 
     /* Extra small devices (phones, 600px and down) */
     @media screen and (max-width: 600px) {
-        
+        font-size: 13px;
+        left: 2rem;
+        top: 23rem;
+        letter-spacing: 3px;
     } 
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media screen and (min-width: 600px) {
-        
+    @media screen and (max-width: 600px) {
+        font-size: 15px;
+        left: 2rem;
+        top: 22rem;
     } 
 
     /* Medium devices (landscape tablets, 768px and up) */
     @media screen and (min-width: 768px) {
-        
+        font-size: 23px;
+        left: 4rem;
+        top: 29rem;
     } 
 
     /* Large devices (laptops/desktops, 992px and up) */
