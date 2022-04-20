@@ -21,7 +21,7 @@ export const FooterMediumWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 50px 75px 50px;
+    margin: 0 90px 75px 90px;
 `;
 
 export const FooterContentWrapper = styled.div`
@@ -60,7 +60,7 @@ export const TextOpacity = styled.p`
 
 export const TextSpan = styled.span`
     font-size: 25px;
-    color: #FFFF;
+    color: gray;
 `;
 
 export default FooterWrapper

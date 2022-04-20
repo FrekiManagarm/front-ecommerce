@@ -148,7 +148,7 @@ class DecodeStream extends _base_stream.BaseStream {
 exports.DecodeStream = DecodeStream;
 
 class StreamsSequenceStream extends DecodeStream {
-  constructor(streams, onError = null) {
+  constructor(streams) {
     let maybeLength = 0;
 
     for (const stream of streams) {
@@ -157,7 +157,6 @@ class StreamsSequenceStream extends DecodeStream {
 
     super(maybeLength);
     this.streams = streams;
-    this._onError = onError;
   }
 
   readBlock() {
@@ -169,20 +168,7 @@ class StreamsSequenceStream extends DecodeStream {
     }
 
     const stream = streams.shift();
-    let chunk;
-
-    try {
-      chunk = stream.getBytes();
-    } catch (reason) {
-      if (this._onError) {
-        this._onError(reason, stream.dict && stream.dict.objId);
-
-        return;
-      }
-
-      throw reason;
-    }
-
+    const chunk = stream.getBytes();
     const bufferLength = this.bufferLength;
     const newLength = bufferLength + chunk.length;
     const buffer = this.ensureBuffer(newLength);

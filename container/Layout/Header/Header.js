@@ -77,9 +77,10 @@ const Header = ({ user, isLoggedIn, drawer, setDrawer }) => {
                 <MobileNavbar>
                     <LogoArea>
                         <a href='/'>
-
+                            <Image src={LogoPic} width={60} height={60} />
                         </a>
                     </LogoArea>
+                    <MainMenu drawer={drawer} setDrawer={setDrawer} />
                 </MobileNavbar>
             </Sticky>
         </HeaderWrapper>
