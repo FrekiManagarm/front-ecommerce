@@ -42,7 +42,7 @@ const Header = ({ user, isLoggedIn }) => {
     <>
         <HeaderWrapper>
             <Sticky top={0} innerZ={1001} enableTransforms={false} activeClass='isHeaderSticky'>
-                <Navbwar 
+                <Navbar 
                     user={user}
                     logo={
                         <Link href="/" prefetch={false} locale={locale}>

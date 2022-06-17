@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@styled-system/theme-get": "^5.1.2",
-    "antd": "^4.19.1",
+    "antd": "^4.21.3",
+    "babel-plugin-styled-components": "^2.0.7",
     "cors": "^2.8.5",
     "country-flag-icons": "^1.4.19",
     "dotenv": "^10.0.0",
@@ -39,7 +40,7 @@
     "react-stickynode": "^4.0.0",
     "redux": "^4.1.2",
     "sass": "^1.47.0",
-    "styled-components": "^5.3.3",
+    "styled-components": "^5.3.5",
     "webpack": "^5.64.4",
     "yup": "^0.32.11"
   },

@@ -29,9 +29,7 @@ import TwitterPic from '../../../public/images/Twitter.png';
 import TwitchPic from '../../../public/images/Twitch.png';
 import YoutubePic from '../../../public/images/Youtube.png';
 
-const MainMenu = ({ className, isLoggedIn  }) => {
-
-const MainMenu = ({ className, isLoggedIn, visible, setVisible }) => {
+const MainMenu = ({ className, isLoggedIn}) => {
     const { t } = useTranslation();
     const router = useRouter();
     const { locale, query } = router;
@@ -156,7 +154,6 @@ const MainMenu = ({ className, isLoggedIn, visible, setVisible }) => {
         </Drawer>
     </>
     )
-    };
-}
+};
 
 export default withRouter(MainMenu);
