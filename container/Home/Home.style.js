@@ -23,25 +23,55 @@ export const SiteTitle = styled.div`
     position: absolute;
     font-size: 120px;
     color: white;
-    top: 40%;
-    left: 40%;
+    justify-content: center;
+    align-items: center;
 
-    @media only screen and (max-width: 600px) {
-        font-size: 40px;
-        left: 4rem;
+    @media only screen and (min-width: 321px) {
+        font-size: 60px;
+        left: 7rem;
     }
 
-    @media only screen and (min-width: 668px) {
+    @media only screen and (min-width: 738px) {
         font-size: 80px;
         left: 10rem;
     }
 
+    @media only screen and (min-width: 769px) {
+        font-size: 100px;
+        left: 8rem;
+        top: 10rem;
+    }
+
+    @media only screen and (min-width: 780px) {
+        font-size: 90px;
+        left: 8rem;
+        top: 10rem;
+    }
+
+    @media only screen and (min-width: 800px) {
+        font-size: 90px;
+        left: 6rem;
+        top: 5rem;
+    }
+
+    @media only screen and (min-width: 835px) {
+        font-size: 80px;
+        left: 2rem;
+    }
+
     @media only screen and (min-width: 1024px) {
-        font-size: 120px;
-        left: 10rem;
+        font-size: 100px;
+        left: 13rem;
+        top: 27rem;
     }
     @media only screen and (min-width: 1200px) {
-        font-size: 150px;
+        font-size: 130px;
+        left: 18rem;
+        top: 14rem;
+    }
+
+    @media only screen and (min-width: 1918px) {
+        font-size: 200px;
         left: 10rem;
     }
 `;
@@ -81,13 +111,19 @@ export const Title = styled.h2`
     letter-spacing: 10px;
     font-size: 75px;
 
-    /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {
-        font-size: 35px;
-        top: 35rem;
-        left: 4%;
+
+    @media only screen and (min-width: 321px) {
+        font-size: 30px;
+        left: 2rem;
+    }
+
+    /* Extra small devices (phones, 600px and down) */    
+    @media only screen and (min-width: 600px) {
+        font-size: 10px;
+        top: 30rem;
+        left: 2rem;
         letter-spacing: 5px;
-    } 
+    }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
@@ -127,7 +163,7 @@ export const Subtitle = styled.a`
     font-size: 30px;
 
     /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (min-width: 600px) {
         font-size: 20px;
         top: 45rem;
         left: 4%;
@@ -191,14 +227,11 @@ export const SecondTitle = styled.h2`
 
     /* Extra small devices (phones, 600px and down) */
     @media screen and (max-width: 600px) {
-        font-size: 13px;
-        left: 2rem;
-        top: 23rem;
-        letter-spacing: 3px;
+        
     } 
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
         font-size: 15px;
         left: 2rem;
         top: 22rem;

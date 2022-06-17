@@ -36,7 +36,8 @@ const AboutPage = ({ user, pageData }) => {
           alt={"image 1"}
           width="1000px" 
           height="700px"
-          quality="50%"
+          quality={60}
+          loading="eager"
           />
         </ImageWrapper>
       </Section>
@@ -50,7 +51,7 @@ const AboutPage = ({ user, pageData }) => {
             alt={"image 1"}
             width="1000px"
             height="700px"
-            quality="50%"
+            quality={60}
             />
           </ImageWrapper>
         </Section>
@@ -64,7 +65,7 @@ const AboutPage = ({ user, pageData }) => {
               alt={"image 1"}
               width="1000px"
               height="700px"
-              quality="50%"
+              quality={60}
               />
             </Link>
             <Link href={'#'}>
@@ -73,7 +74,7 @@ const AboutPage = ({ user, pageData }) => {
               alt={"image 1"}
               width="1000px"
               height="700px"
-              quality="50%"
+              quality={60}
               />
             </Link>
             <Link href={'#'}>
@@ -82,7 +83,7 @@ const AboutPage = ({ user, pageData }) => {
               alt={"image 1"}
               width="1000px"
               height="700px"
-              quality="50%"
+              quality={60}
               />
             </Link>
           </ImageWrapper>
